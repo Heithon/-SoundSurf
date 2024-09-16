@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenAI TTS 朗读助手设置</title>
+  <link rel="stylesheet" type="text/css" href="popup.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1>OpenAI TTS 朗读助手</h1>
+    <div class="form-group">
+      <label for="apiKey">API Key</label>
+      <div class="input-group">
+        <input type="password" id="apiKey" placeholder="输入您的OpenAI API Key">
+        <button id="toggleApiKey" class="toggle-password">
+          <i class="fas fa-eye"></i>
+        </button>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="urlBase">URL Base</label>
+      <input type="text" id="urlBase" placeholder="输入API基础URL">
+    </div>
+    <div class="form-group">
+      <label for="model">TTS 模型</label>
+      <select id="model">
+        <option value="tts-1">tts-1 (标准)</option>
+        <option value="tts-1-hd">tts-1-hd (高清)</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="voice">声音</label>
+      <select id="voice">
+        <option value="alloy">Alloy</option>
+        <option value="echo">Echo</option>
+        <option value="fable">Fable</option>
+        <option value="onyx">Onyx</option>
+        <option value="nova">Nova</option>
+        <option value="shimmer">Shimmer</option>
+      </select>
+    </div>
+    <div class="form-group button-group">
+      <button id="saveSettings" class="btn">保存设置</button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

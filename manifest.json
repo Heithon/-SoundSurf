@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "OpenAI TTS 朗读助手",
+  "version": "1.0",
+  "description": "将选中的文字使用OpenAI TTS API转换为语音",
+  "permissions": ["contextMenus", "storage", "activeTab"],
+  "host_permissions": ["https://*.openai.com/"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}

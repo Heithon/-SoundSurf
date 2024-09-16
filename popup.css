@@ -1,0 +1,111 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #e0e5ec;
+  margin: 0;
+  padding: 25px;
+  width: 350px;
+}
+
+.container {
+  background-color: #e0e5ec;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 
+    9px 9px 16px rgb(163,177,198,0.6),
+    -9px -9px 16px rgba(255,255,255, 0.5);
+}
+
+h1 {
+  color: #2c3e50;
+  font-size: 24px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+  color: #34495e;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+  width: calc(100% - 24px); /* 减去padding的宽度 */
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background-color: #e0e5ec;
+  color: #2c3e50;
+  font-size: 16px;
+  box-shadow: 
+    inset 2px 2px 5px #babecc,
+    inset -5px -5px 10px #ffffff;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+.input-group input {
+  flex-grow: 1;
+  width: calc(100% - 40px); /* 为眼睛图标留出空间 */
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #7f8c8d;
+  cursor: pointer;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #7fa1c1; /* 更柔和的蓝色 */
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 
+    -5px -5px 10px #ffffff,
+    5px 5px 10px #babecc;
+}
+
+.btn:hover {
+  background-color: #6b8cad; /* 稍深一点的蓝色 */
+  box-shadow: 
+    -2px -2px 5px #ffffff,
+    2px 2px 5px #babecc;
+}
+
+.btn:active {
+  background-color: #5d7a96; /* 更深一点的蓝色 */
+  box-shadow: 
+    inset 1px 1px 2px #babecc,
+    inset -1px -1px 2px #ffffff;
+}
+
+.button-group {
+  margin-top: 30px;
+}
